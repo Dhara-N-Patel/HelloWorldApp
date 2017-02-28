@@ -1,0 +1,1 @@
+C:\Users\Niraj\Desktop\Dhara KYSU\Spring 2016\COS-521\Assignment\HelloWorldApp\HelloWorldApp.API.Test\obj\Debug\HelloWorldApp.API.Test.csprojResolveAssemblyReference.cache

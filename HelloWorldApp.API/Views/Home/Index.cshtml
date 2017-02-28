@@ -1,0 +1,25 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <h2>Greetings</h2>
+        <hr />
+        <h2 id="greeting"></h2>
+        <p><button class="btn btn-primary" onclick="greet()">Say Hello</button></p>
+    </div>
+</div>
+
+<script>
+    function displayGreeting(greeting) {
+        $("#greeting").html(greeting);
+    }
+
+    function greet() {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("GetGreeting", "Home")",
+            contentType: "application/json; charset=utf-8",
+            success: function (result) {
+                displayGreeting(result);
+            }
+        });
+    }
+</script>
